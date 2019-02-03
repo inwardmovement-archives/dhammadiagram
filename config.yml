@@ -1,7 +1,7 @@
 baseURL: "https://inwardmovement.github.io/dhammadiagram"
 languageCode: "en-us"
 defaultContentLanguage: "en"
-title: "Dhamma Diagram"
+title: "The Dhamma Diagram"
 canonifyURLs: true
 disableLiveReload: true
 metaDataFormat: yaml
@@ -20,11 +20,11 @@ blackfriday:
 footnoteReturnLinkContents: "↑"
 menu:
   main:
-    - Name: "Poèmes"
-      URL: "/poemes/"
-      Identifier: "poemes"
+    - Name: "Home"
+      URL: "/"
+      Identifier: "home"
       weight: 1
-    - Name: "Articles"
-      URL: "/articles/"
-      Identifier: "articles"
+    - Name: "About"
+      URL: "/about/"
+      Identifier: "about"
       weight: 2

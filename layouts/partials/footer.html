@@ -1,0 +1,15 @@
+<nav id="footer" class="navbar navbar-expand navbar-light bg-light nav-footer" aria-label="Footer navigation">
+  <div class="container">
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link" href="https://github.com/inwardmovement/dhammadiagram" target="_blank">GitHub <i class="material-icons">launch</i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+{{ $jquery := resources.Get "js/jquery.js" }}
+{{ $bootstrap := resources.Get "js/bootstrap.js" }}
+{{ $app := resources.Get "js/app.js" }}
+{{ $main := slice $jquery $bootstrap $app | resources.Concat "main.js" | minify | fingerprint }}
+<script src="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}"></script>
