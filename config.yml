@@ -1,0 +1,30 @@
+baseURL: "https://inwardmovement.github.io/dhammadiagram"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "Dhamma Diagram"
+canonifyURLs: true
+disableLiveReload: true
+metaDataFormat: yaml
+rssLimit: 10
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "taxonomyTerm"]
+params:
+  description: "A dynamic contextual diagram of main buddhist concepts"
+  author: "Victor Massé"
+author:
+  name: "Victor Massé"
+blackfriday:
+  extensions:
+    - hardLineBreak
+    - noEmptyLineBeforeBlock
+footnoteReturnLinkContents: "↑"
+menu:
+  main:
+    - Name: "Poèmes"
+      URL: "/poemes/"
+      Identifier: "poemes"
+      weight: 1
+    - Name: "Articles"
+      URL: "/articles/"
+      Identifier: "articles"
+      weight: 2
